@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Flatpak
         run: |
-          flatpak-builder --repo=repo build-dir net.imput.helium.yml
+          flatpak-builder --user --repo=repo build-dir net.imput.helium.yml
 
       - name: Upload repo to gh-pages
         uses: peaceiris/actions-gh-pages@v4
